@@ -1,12 +1,12 @@
 import java.util.*;
 public class DiceHolder{
-	private ArrayList <Die> container;
+	private ArrayList <Integer> container;
 
 	public DiceHolder(){
 		container = new ArrayList <> ();
 	}
 	public int addDie(Die die){
-		container.add(die);
+		container.add(1);
 		if(container.size() > 6){
 			container.remove(die);
 			return -1;
@@ -25,6 +25,7 @@ public class DiceHolder{
 	public String toString(){
 		for(int i = 0; i < container.size();i++)
 		return ""+container.get(i)+" \n";
+		return ""+container+" \n";
 	}
 }
 
