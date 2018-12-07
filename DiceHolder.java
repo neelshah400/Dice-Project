@@ -15,7 +15,6 @@ public class DiceHolder{
 		if(container.size() < 6){
 			container.add(die);
 			return 1;
-
 		}
 		return -1;
 
@@ -36,6 +35,5 @@ public class DiceHolder{
 		return statement;
 
 	}
-
 }
 
