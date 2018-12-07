@@ -2,11 +2,7 @@ import java.util.ArrayList;
 
 public class DiceHolder{
 
-	private ArrayList <Integer> container;
-
-
 	private ArrayList<Die> container;
-
 
 	public DiceHolder(){
 
@@ -16,16 +12,9 @@ public class DiceHolder{
 
 	public int addDie(Die die){
 
-		container.add(1);
-		if(container.size() > 6){
-			container.remove(die);
-			return -1;
-
-
 		if(container.size() < 6){
 			container.add(die);
 			return 1;
-
 		}
 		return -1;
 
@@ -45,17 +34,11 @@ public class DiceHolder{
 
 	public String toString(){
 
-		for(int i = 0; i < container.size();i++)
-		return ""+container.get(i)+" \n";
-		return ""+container+" \n";
-
-
 		String statement = "";
 		for(int i = 0; i < container.size(); i++)
 			statement += container.get(i) + "\n";
 		return statement;
 
 	}
-
 }
 
