@@ -1,3 +1,5 @@
+// Partner B: Aniketh Madhugiri
+
 import java.util.ArrayList;
 
 public class DiceHolder{

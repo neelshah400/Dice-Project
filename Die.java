@@ -1,3 +1,5 @@
+// Partner A: Neel Shah
+
 public class Die{
 
 	private int sides;
