@@ -28,6 +28,18 @@ public class DiceRunner{
 
 		}
 
+		System.out.println("\n" + rolls + " rolls were needed to get snake eyes.");
+
+		// Test 2
+
+		DiceHolder container = new DiceHolder();
+		for(int i = 0; i < 10; i++){
+			Die temp = new Die((int)(Math.random() * 6) + 6));
+			if(temp == 1)
+				container.add(temp);
+			System.out.println(container);
+		}
+
 	}
 
 }
